@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Intereses - Chrystian Palma</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Cambiar imagen de fondo del encabezado solo en intereses.html */
+        header#inicio {
+            background-image: url('recursos/intereses.webp');  /* Cambia esta ruta por la de tu imagen */
+            background-size: cover; /* Hace que la imagen cubra todo el encabezado */
+            background-position: center; /* Centra la imagen en el encabezado */
+            height: 300px; /* Ajusta la altura del encabezado según lo necesites */
+        }
+    </style>
+</head>
+<body>
+    <!-- Menú de navegación -->
+    <nav>
+        <button id="menu-toggle">☰ Menú</button>
+        <ul id="menu">
+            <li><a href="index.html#inicio">Inicio</a></li>
+            <li><a href="index.html#sobre-mi">Sobre Mí</a></li>
+            <li><a href="index.html#proyectos">Proyectos</a></li>
+            <li><a href="index.html#contacto">Contacto</a></li>
+            <li><button id="theme-toggle">🌙 Modo Oscuro</button></li>
+        </ul>
+    </nav>
+
+    <!-- Sección de Mis Intereses -->
+    <header id="inicio">
+        <div class="container">
+            <h1>Mis Intereses 🎯</h1>
+        </div>
+    </header>
+
+    <!-- Sección de contenido con recuadro destacado -->
+    <section class="contenido" id="mis-intereses-contenedor">
+        <p>Me apasiona el desarrollo de software, especialmente en las siguientes áreas:</p>
+        <ul>
+            <li><strong>Inteligencia Artificial:</strong> Me interesa cómo la IA puede transformar el mundo mediante el aprendizaje automático y redes neuronales.</li>
+            <li><strong>Análisis de Datos:</strong> El análisis y procesamiento de grandes volúmenes de datos para generar insights valiosos es una de mis principales áreas de enfoque.</li>
+            <li><strong>Desarrollo Web:</strong> Estoy muy interesado en el desarrollo web moderno, tanto en frontend como en backend, usando tecnologías como JavaScript, Python y frameworks como React y Node.js.</li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>Contacto: <a href="tel:+50259295878">+502 5929 5878</a></p>
+                <p>Correo: <a href="mailto:chrystian@gmail.com">chrystian@gmail.com</a></p>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2023 Chrystian Andrés Palma Iriarte. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Enlace al archivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

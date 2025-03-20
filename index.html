@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Chrystian Palma</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Menú de navegación -->
+    <nav>
+        <button id="menu-toggle">☰ Menú</button>
+        <ul id="menu">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-mi">Sobre Mí</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><button id="theme-toggle">🌙 Modo Oscuro</button></li>
+        </ul>
+    </nav>
+
+    <!-- Sección de Inicio -->
+    <header id="inicio">
+        <div class="container">
+            <h1>Chrystian Andrés Palma Iriarte</h1>
+            <p>Estudiante de Ingeniería en sistemas de información y ciencias de la computación</p>
+            <p>Un analista de sistemas con un enfoque distinto</p>
+            <img src="recursos/image (7).PNG" alt="Foto de perfil">
+        </div>
+    </header>
+
+<!-- Sección Sobre Mí -->
+<section id="sobre-mi">
+    <div class="container">
+        <h2>Sobre Mí</h2>
+        <div class="sobre-mi-grid">
+            <div class="sobre-mi-item">
+                <img src="Recursos/intereses.webp" alt="Intereses">
+                <h3>Mis Intereses 🎯</h3>
+                <p>Me apasiona el desarrollo de software, especialmente en inteligencia artificial y análisis de datos, buscando soluciones que optimicen procesos y mejoren la toma de decisiones. Mi objetivo es crear tecnologías innovadoras que resuelvan problemas reales.</p>
+                <!-- Enlace para "Saber Más" sobre intereses -->
+                <a href="intereses.html">
+                    <button class="btn-saber-mas">Saber Más</button>
+                </a>
+            </div>
+            <div class="sobre-mi-item">
+                <img src="Recursos/Formación.jpg" alt="Formación Académica">
+                <h3>Formación Académica 🎓</h3>
+                <p>Soy estudiante de Ingeniería en Sistemas en la Universidad Mariano Gálvez, con especialización en desarrollo web, programación orientada a objetos y bases de datos.</p>
+                <!-- Enlace para "Saber Más" sobre formación -->
+                <a href="formacion.html">
+                    <button class="btn-saber-mas">Saber Más</button>
+                </a>
+            </div>
+            <div class="sobre-mi-item">
+                <img src="Recursos/habilidades.jpg" alt="Habilidades Técnicas">
+                <h3>Habilidades Técnicas 🛠️</h3>
+                <p>Domino lenguajes como <strong>JavaScript, Python y HTML/CSS.</strong> Además, tengo experiencia con frameworks como <strong>React, Node.js</strong> y herramientas de bases de datos como <strong>SQL y MongoDB.</strong></p>
+                <!-- Enlace para "Saber Más" sobre habilidades -->
+                <a href="habilidades.html">
+                    <button class="btn-saber-mas">Saber Más</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Sección Proyectos -->
+    <section id="proyectos">
+        <div class="container">
+            <h2>Proyectos</h2>
+            <div class="proyectos-grid">
+                <div class="proyecto">
+                    <img src="Recursos/Proyecto 1.webp" alt="Proyecto 1">
+                    <h3>Sistema de Gestión de Contactos en Python 📇🐍</h3>
+                    <p>Desarrollé un Sistema de Gestión de Contactos en Python con SQLite
+                        como base de datos, proporcionando una solución eficiente para almacenar,
+                        administrar y gestionar información de contactos personales o profesionales.
+                        Este proyecto implementa una interfaz interactiva basada en consola,
+                        permitiendo una navegación intuitiva y una manipulación sencilla de los datos.</p>
+                </div>
+                <div class="proyecto">
+                    <img src="Recursos/Proyecto 2.webp" alt="Proyecto 2">
+                    <h3>Diseño y Desarrollo Web Freelance 🌐💻</h3>
+                    <p>DComo diseñador y desarrollador web freelance, 
+                        he trabajado en la creación de sitios web personalizados, 
+                        brindando soluciones adaptadas a las necesidades específicas de cada cliente. 
+                        Mi enfoque combina diseño atractivo, usabilidad intuitiva y desarrollo optimizado, 
+                        garantizando un producto final funcional y visualmente impactante.</p>
+                </div>
+                <div class="proyecto">
+                    <img src="Recursos/Proyecto 3.webp" alt="Proyecto 3">
+                    <h3>Zunun: Plataforma Educativa para el Colegio del Futuro 🎓📚</h3>
+                    <p>Apoye en el desarrollo de Zunun, una plataforma educativa integral diseñada para el Colegio de guatemala, 
+                        enfocada en facilitar el acceso a contenidos académicos y mejorar la experiencia de aprendizaje
+                        de los estudiantes. Esta plataforma digital permite la distribución y organización de recursos 
+                        educativos en un entorno moderno e interactivo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto">
+        <div class="container">
+            <h2>Contacto</h2>
+            <form id="formulario-contacto">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+            <p id="mensaje-enviado"></p>
+
+            <!-- Enlace para descargar el currículum -->
+            <div class="descargar-cv">
+                <p>¿Quieres conocer más sobre mi experiencia? Descarga mi currículum:</p>
+                <a href="curriculum.pdf" download="Curriculum_Chrystian_Palma.pdf">Descargar CV (PDF)</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Script de JavaScript -->
+    <script src="script.js"></script>
+
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <p>Contacto: <a href="tel:+50259295878">+502 5929 5878</a></p>
+            <p>Correo: <a href="mailto:chrystian@gmail.com">chrystian@gmail.com</a></p>
+        </div>
+        <div class="footer-copyright">
+            <p>&copy; 2023 Chrystian Andrés Palma Iriarte. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

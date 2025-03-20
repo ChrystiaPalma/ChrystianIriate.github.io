@@ -1,0 +1,501 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1c1c1c; 
+    color: #dcdcdc; 
+}
+
+/* Estilos para modo claro */
+.light-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.light-mode nav {
+    background-color: #f0f0f0;
+}
+
+.light-mode #menu li a {
+    color: #000000;
+}
+
+.light-mode form input,
+.light-mode form textarea {
+    background-color: #ffffff;
+    color: #000000;
+    border-color: #000000;
+}
+
+.light-mode form button {
+    background-color: #0073e6;
+    color: #ffffff;
+}
+
+.light-mode footer {
+    background-color: #f0f0f0;
+    color: #000000;
+}
+
+.light-mode .proyecto {
+    background-color: #e0e0e0;
+}
+
+.light-mode #sobre-mi {
+    background-color: #f5f5f5;
+    color: #000000;
+}
+
+.light-mode #contacto {
+    background-color: #f5f5f5;
+    color: #000000;
+}
+
+.light-mode .proyecto h3, .light-mode .proyecto p {
+    color: #000000;
+}
+
+.light-mode #contacto label, .light-mode #contacto h2 {
+    color: #000000;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1c1c1c; 
+    color: #dcdcdc; 
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+h1, h2, h3 {
+    color: #c0c0c0; 
+}
+
+/* Menú de navegación */
+nav {
+    background-color: #003366; 
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#menu-toggle {
+    display: none; 
+    background: none;
+    border: none;
+    color: silver;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 50px;
+    padding: 10px 15px;
+}
+
+#menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+#menu li a {
+    color: silver;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 50px;
+    transition: background 0.3s ease;
+}
+
+#menu li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Estilos para el botón de cambio de tema */
+#theme-toggle {
+    background-color: #005bb5;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    border: none;
+}
+
+/* Sección de Inicio */
+#inicio {
+    text-align: center;
+    background: url('Recursos/Background.webp') no-repeat center center/cover; 
+    background-size: cover;
+    background-position: center;
+    color: silver;
+    padding: 100px 0;
+    border-radius: 15px;
+    position: relative;
+    min-height: 300px; 
+}
+
+#inicio h1 {
+    color: #ffffff; 
+    font-weight: bold;
+}
+
+#inicio img {
+    width: 100px; 
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+}
+
+#inicio p {
+    color: #ffffff; 
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Sección Sobre Mí */
+#sobre-mi {
+    background-color: #2c2c2c; /* Gris más claro */
+    padding: 50px 0;
+    border-radius: 15px;
+}
+
+.sobre-mi-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.sobre-mi-item {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(192, 192, 192, 0.3);
+    text-align: center;
+    color: silver;
+}
+
+.sobre-mi-item img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 15px;
+}
+
+.sobre-mi-item h3 {
+    margin: 15px 0;
+    font-size: 1.2rem;
+}
+
+.sobre-mi-item p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Estilos para el botón "Saber Más" */
+.btn-saber-mas {
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 25px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-saber-mas:hover {
+    background-color: #005bb5;
+    transform: scale(1.05);
+}
+
+/* Sección Proyectos */
+#proyectos {
+    background-color: #1c1c1c;
+    padding: 50px 0;
+    border-radius: 15px;
+}
+
+.proyectos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.proyecto {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(192, 192, 192, 0.3);
+    text-align: center;
+    color: silver;
+}
+
+.proyectos-grid img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 15px;
+}   
+
+.proyecto img {
+    border-radius: 15px;
+}
+
+/* Sección Contacto */
+#contacto {
+    background-color: #2c2c2c;
+    padding: 50px 0;
+    border-radius: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid silver;
+    border-radius: 15px;
+    background-color: #1c1c1c;
+    color: silver;
+}
+
+form button {
+    padding: 10px;
+    background-color: #003366;
+    color: silver;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background-color: #001a33;
+}
+
+#mensaje-enviado {
+    margin-top: 20px;
+    color: lightgreen;
+    font-weight: bold;
+}
+
+/* Estilos para el enlace de descarga del CV */
+.descargar-cv {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.descargar-cv a {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #0073e6;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.descargar-cv a:hover {
+    background-color: #005bb5;
+    transform: scale(1.05);
+}
+
+/* Estilos para el Footer */
+footer {
+    background-color: #003366; 
+    color: silver;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
+    margin-top: 50px; 
+}
+
+.footer-content {
+    margin-bottom: 10px;
+}
+
+.footer-content p {
+    margin: 5px 0;
+}
+
+.footer-content a {
+    color: silver;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-content a:hover {
+    color: #ffd700; 
+}
+
+.footer-copyright {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+    #menu-toggle {
+        display: block; 
+    }
+
+    #menu {
+        display: none; 
+        flex-direction: column;
+    }
+
+    #menu.active {
+        display: flex; 
+    }
+
+    .sobre-mi-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sobre-mi-content img {
+        display: none; 
+    }
+}
+
+#mis-intereses-contenedor {
+    background-color: #333;  /* Fondo oscuro */
+    padding: 30px;
+    border-radius: 15px;
+    color: #dcdcdc;
+    margin: 20px auto;  /* Esto mantiene el contenedor centrado */
+    max-width: 100%;  /* Asegura que el contenedor no se haga más grande que el 90% del ancho de la pantalla */
+    width: auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    text-align: left;  /* Alinea el texto a la izquierda */
+    box-sizing: border-box;  /* Incluye padding en el cálculo del tamaño del contenedor */
+}
+
+#mis-intereses-contenedor p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #e0e0e0;
+    padding: 20px;
+    background: rgb(29, 29, 29);
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: center; /* Alinea solo este párrafo al centro */
+}
+
+#mis-intereses-contenedor ul {
+    text-align: left; /* Asegura que el contenido de la lista esté alineado a la izquierda */
+    padding-left: 20px; /* Agrega espacio a la izquierda de la lista */
+}
+
+#mis-intereses-contenedor ul li {
+    margin: 10px 0;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #e0e0e0;
+}
+
+header#inicio h1 {
+    margin-top: 280px;  /* Ajusta este valor según lo que necesites */
+}
+
+#formacion-contenedor {
+    background-color: #333;  /* Fondo oscuro */
+    padding: 30px;
+    border-radius: 15px;
+    color: #dcdcdc;
+    margin: 20px auto;  /* Esto mantiene el contenedor centrado */
+    max-width: 100%;  /* Asegura que el contenedor no se haga más grande que el 100% del ancho de la pantalla */
+    width: auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    text-align: left;  /* Alinea el texto a la izquierda */
+    box-sizing: border-box;  /* Incluye padding en el cálculo del tamaño del contenedor */
+}
+
+#formacion-contenedor p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #e0e0e0;
+    padding: 20px;
+    background: rgb(29, 29, 29);
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: center; /* Alinea solo este párrafo al centro */
+}
+
+#formacion-contenedor ul {
+    text-align: left; /* Asegura que el contenido de la lista esté alineado a la izquierda */
+    padding-left: 20px; /* Agrega espacio a la izquierda de la lista */
+}
+
+#formacion-contenedor ul li {
+    margin: 10px 0;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #e0e0e0;
+}
+
+header#inicio h1 {
+    margin-top: 280px;  /* Ajusta este valor según lo que necesites */
+}
+
+#habilidades-contenedor {
+    background-color: #333;  /* Fondo oscuro */
+    padding: 30px;
+    border-radius: 15px;
+    color: #dcdcdc;
+    margin: 20px auto;  /* Esto mantiene el contenedor centrado */
+    max-width: 100%;  /* Asegura que el contenedor no se haga más grande que el 100% del ancho de la pantalla */
+    width: auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    text-align: left;  /* Alinea el texto a la izquierda */
+    box-sizing: border-box;  /* Incluye padding en el cálculo del tamaño del contenedor */
+}
+
+#habilidades-contenedor p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #e0e0e0;
+    padding: 20px;
+    background: rgb(29, 29, 29);
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: center; /* Alinea solo este párrafo al centro */
+}
+
+#habilidades-contenedor ul {
+    text-align: left; /* Asegura que el contenido de la lista esté alineado a la izquierda */
+    padding-left: 20px; /* Agrega espacio a la izquierda de la lista */
+}
+
+#habilidades-contenedor ul li {
+    margin: 10px 0;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #e0e0e0;
+}
+
+header#inicio h1 {
+    margin-top: 280px;  /* Ajusta este valor según lo que necesites */
+}
