@@ -25,16 +25,19 @@ Este proyecto es una página web personal creada para mostrar mi perfil profesio
 1. Clona el repositorio:
 
 ```bash
-git clone https://github.com/usuario/mipagina.git
+git clone https://github.com/ChrystiaPalma/ChrystianIriate.github.io
 Entra en la carpeta del proyecto:
 bash
 Copiar
-cd mipagina
+cd ChrystianIriate.github.io-main
 Abre el archivo HTML en un navegador:
 
 Puedes hacer doble clic en index.html.
 O ejecutar Live Server en VS Code (Alt + L, luego Alt + O).
-De lo contrario, ingresa al siguiente enlace: [Tu Enlace Web]
+De lo contrario, ingresa al siguiente enlace: https://chrystiapalma.github.io/ChrystianIriate.github.io/
+
+También si lo deseas puedes descargar Los recursos en el siguiente enlace:
+ https://github.com/ChrystiaPalma/ChrystianIriate.github.io
 
 📌 Estructura del Proyecto
 
@@ -48,4 +51,4 @@ De lo contrario, ingresa al siguiente enlace: [Tu Enlace Web]
 📩 Contacto
 
 📧 Correo: cpalmai@miumg.edu.gt
-🌐 Sitio Web: Tu Sitio Web
+🌐 Sitio Web: https://chrystiapalma.github.io/ChrystianIriate.github.io/
